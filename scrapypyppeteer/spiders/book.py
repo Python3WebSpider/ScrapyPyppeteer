@@ -8,7 +8,7 @@ class BookSpider(Spider):
     allowed_domains = ['dynamic5.scrape.center']
     
     base_url = 'https://dynamic5.scrape.center/page/{page}'
-    max_page = 10
+    max_page = 500
     
     def start_requests(self):
         for page in range(1, self.max_page + 1):
